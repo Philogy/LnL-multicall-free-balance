@@ -3,6 +3,10 @@ pragma solidity =0.8.12;
 
 import {NativeHolder} from "./NativeHolder.sol";
 
+/**
+ * @dev example ETH deposit managing contract that has multicalll and uses ETH
+ * safely. Written using the FBA (free balance accounting) pattern
+ */
 contract SimpleDepo is NativeHolder {
     mapping(address => uint256) public balances;
 

@@ -3,6 +3,9 @@ pragma solidity =0.8.12;
 
 import {Multicall} from "../Multicall.sol";
 
+/**
+ * @dev example of free balance accounting, ETH holding base contract
+ */
 abstract contract NativeHolder is Multicall {
     uint256 private heldNative;
 
